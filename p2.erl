@@ -15,7 +15,7 @@ loop() ->
             p1:compute(Num),
             loop();
         _ ->
-            io:format("Invalid input. Please enter an integer.~n"),
+            io:format("Not an integer~n"),
             loop()
     end.
 

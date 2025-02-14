@@ -11,7 +11,7 @@ get_numData() ->
     case io:read("Enter a number (0 to exit): ") of
         {ok, Num} when is_integer(Num) -> Num;
         _ ->
-            io:format("not an integer~n"),
+            io:format("Not an integer~n"),
             get_numData()
     end.
 
